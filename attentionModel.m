@@ -1,4 +1,4 @@
-function R = attentionModel(x,theta,stimulus,varargin)
+function [R,Eraw,attnGain,E,I] = attentionModel(x,theta,stimulus,varargin)
 % 
 % R = attentionModel(x,theta,stimulus,[param1],[value1],[param2],[value2],...,[paramN],[valueN])
 %
