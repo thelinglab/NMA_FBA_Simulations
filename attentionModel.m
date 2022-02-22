@@ -169,6 +169,11 @@ E = attnGain .* Eraw;
 
 % Suppressive drive
 I = conv2sepYcirc(E,IxKernel,IthetaKernel);
+if IthetaWidth >= 180
+    for x = 1:size(I,2)
+        I(:,x) = mean(I(:,x));
+    end
+end
 Imax = max(I(:));
 
 % Normalization
