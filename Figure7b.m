@@ -5,7 +5,7 @@ close all
 numContrasts = 30;
 thetaWidth = 20;
 AxWidth = 400;
-AthetaWidth = 20;
+AthetaWidth = 30;
 IthetaWidth = 180;
 cRange = [1e-6 1];
 sigma = 1e-5;
