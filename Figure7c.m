@@ -30,7 +30,6 @@ stim_loc = zeros(size(x));
 stim_loc(abs(x) < 90) = 1;
 
 stim1 = makeGaussian(theta,stimOrientation1,1,1) * stim_loc;
-stim2 = makeGaussian(theta,stimOrientation2,1,1) * stim_loc; 
 
 % Pick contrasts
 logCRange = log10(cRange);
